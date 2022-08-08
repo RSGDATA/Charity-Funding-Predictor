@@ -157,3 +157,6 @@ The tensorflow model perhaps might be better suited for a more complex data arch
 
 Neural networks are primarly used for Images, Audio, and Text data, not tubular data. Random Forest classifier takes much less manual parameter tuning than neural networks, and should be used first, before neural network models in general. That being said, that does not mean the random forest classifier will be more effective with a tubular data set either, but the random froest classifier takes much less preprocessing and is easier to set up then neural network and would perhaps be a more natural choice before using a neural network model.
 
+## Sources
+
+https://www.kdnuggets.com/2019/06/random-forest-vs-neural-network.html
