@@ -47,9 +47,8 @@ and also factored into why i choice "IS_SUCCESSFUL" as the target column.
 * "EIN"
 * "NAME"
  
- The EIN and NAME features are indifiers. both of these columns so not add to the models purpose of predicting money being well spent on orginizations. EIN is a natural
- index that would be usual for identifify trend on what orginisation Name is getting the most funding for example. In that case the columns would sty in the data set, but since we are predicting how well the money is being spent and not predicting where the money will go, there is now reason to keep these features in the data set.
- 
+ The EIN and NAME features are indifiers. both of these columns do not add value to the models purpose of predicting money being well spent on orginizations. EIN is a natural index that would be useful for identifify trends by orginisation Name, and identifying which orginization is getting the most funding ans an example. In that case the columns would stay in the data set, but since we are predicting how well the money is being spent per orginization, these two columns do not add anything to the 
+data set.
 
 ### Picture of EIN and NAME with unique counts
 
@@ -60,19 +59,19 @@ THis shows the EIN is an index becuase the number of unique values in the feaure
 that will ascociate with the names in this context so they where dropped.
 ## Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
+### How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 ### Count of neurons,layer and activation functions for Starter_Code notebook
 
-* ns=euron count: 40. I chose 40 neurons becuase a basic rule of thumb is that the ammount of neurons should be more or less even with the amount of features which is 35.
+* neuron count: 40. I chose 40 based on intuition.
 * layer count: 1 input, 1 hidden, 1 output. I thought that a good default number is one hiden layer.
-* function count:2 "relu", 1 "sigmoid"> I chose relu and sigmoid becuase they are the most common and reliable activation functions
+* function count:2 "relu", 1 "sigmoid"> I chose relu and sigmoid becuase they are the most common and very reliable activation functions
 
 <img width="500" alt="Screen Shot 2022-08-07 at 4 22 59 PM" src="https://user-images.githubusercontent.com/96738642/183311421-c561c556-9f59-4276-88ba-abf9e2d0fa45.png">
 
 ### Count of neurons,layer and activation functions for Starter_Code notebook 
 
-* nuron count: 60. To try and raise my accuracy score I raised the numbers of neurons
+* nuron count: 60. To try and raise my accuracy score I raised the numbers of neurons, this was an experiment and the  increase of neurons do not neccesarily equate to  improved performance in the model.
 * layer count: 1 input, 2 hidden, 1 output. I chose to add a 1 hidden layer to the model in hopes that it would improve the score
 * activation function count: 3 "tanh", 1 "sigmoid". I chose tanh becuase in the previous notebook I chose relu and is an eperiment in an atempt to raise the models score
 
@@ -140,8 +139,10 @@ to raise the score to the 0.75 goal. overall the model is showing that it has a 
 
 Include a recommendation for how a different model could solve this classification problem
 
-
+A Random Forest classifier could be a better fit for this data. 
 
 
 explain your recommendation.
+
+The tensorflow model perhaps might be better suited for a more complex data architecture. With a Random Forest Classifier you can use the  defalault parameters and not have to scale the data. Neural networks are primarly used for Images, Audio, Text data and not tubular data. Random Forest classifier takes much less manual parameter tuning the neural network and should be used first before neural networks in general. That being said that does not mean the random forest classifier will be mor effective with tubular data but te random froest classifier take much less preprocessing and is easier to set up thean neural network.
 
