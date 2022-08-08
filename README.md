@@ -73,7 +73,7 @@ that will ascociate with the names in this context so tthe two features where dr
 
 ### Count of neurons,layer and activation functions for Starter_Code notebook
 
-* neuron count: 40. I chose 40 based on intuition.
+* neuron count: 40. I chose input layer is 15 and and hidden layer is 25. I chose these numbers becuase the hidden layer should be about 2/3 larger than the input layer
 * layer count: 1 input, 1 hidden, 1 output. I thought that a good default number is one hidden layer.
 * function count:2 "relu", 1 "sigmoid"1. I chose relu and sigmoid becuase they are the most common and very reliable activation functions
 
